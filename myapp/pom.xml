@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mycompany</groupId>
+  <artifactId>myapp</artifactId>
+  <packaging>jar</packaging>
+  <version>3.0-SNAPSHOT</version>
+  
+  <!-- <properties>
+    <mavenVersion>2.0.6</mavenVersion>
+  </properties>-->
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-release-plugin -->
+
+
+	
+ 
+    <!--<dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-model</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-artifact</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-utils</artifactId>
+      <version>1.5.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugin-testing</groupId>
+      <artifactId>maven-plugin-testing-harness</artifactId>
+      <version>1.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.2</version>
+      <scope>test</scope>
+    </dependency>-->
+  </dependencies>
+  
+  
+ <!-- <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-invoker-plugin</artifactId>
+		</plugin>
+   </plugins> -->
+  
+  <distributionManagement>
+
+		<repository>
+			<id>releaserepo</id>
+			<url>http://localhost:8081/nexus/content/repositories/releaserepo/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshotrepo</id>
+			<url>http://localhost:8081/nexus/content/repositories/snapshotrepo/</url>
+		</snapshotRepository>		
+  </distributionManagement>
+</project>
